@@ -76,7 +76,7 @@ public class MeetOurBroker {
 	@Then("^following message \"([^\"]*)\" is displayed in \"([^\"]*)\"$")
 	public void following_message_is_displayed(String message,String locator){
 		WebI.GetText(locator, message);
-	WebI.CloseBrowser();
+		WebI.CloseBrowser();
 	    
 	}
 
