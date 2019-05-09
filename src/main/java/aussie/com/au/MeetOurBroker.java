@@ -15,7 +15,7 @@ public class MeetOurBroker {
 	{
 		WebI.OpenBrowser(browser);
 		WebI.GetURL(url);
-		
+System.out.println("testtttt");		
 	}
 	@And("^I view \"([^\"]*)\" menu and wait for \"([^\"]*)\"$")
 	public void i_view_menu(String menuName,String submenu) {
@@ -76,7 +76,7 @@ public class MeetOurBroker {
 	@Then("^following message \"([^\"]*)\" is displayed in \"([^\"]*)\"$")
 	public void following_message_is_displayed(String message,String locator){
 		WebI.GetText(locator, message);
-		WebI.CloseBrowser();
+	WebI.CloseBrowser();
 	    
 	}
 
